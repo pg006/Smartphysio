@@ -7,12 +7,11 @@ const AllRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route path="auth">
-            <Route path="login" element={<Login />} />
+        
+          <Route path="/">
+            <Route index element={<Login />} />
             <Route path="register" element={<Register />} />
           </Route>
-        </Route>
       </Routes>
     </BrowserRouter>
   );

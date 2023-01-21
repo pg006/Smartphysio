@@ -1,0 +1,31 @@
+.login-page {
+  margin: 0 !important;
+  height: 100vh;
+  .img-col {
+    background-color: #fbca2e;
+  }
+  .login-col {
+    margin: 15%;
+    .login-title {
+      font-weight: 600;
+      font-size: 40px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+    }
+    .login-button {
+      width: 100%;
+      margin: 5px 0 15px 0;
+    }
+    .register-button {
+      width: 100%;
+      border: 1px solid gray;
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}
