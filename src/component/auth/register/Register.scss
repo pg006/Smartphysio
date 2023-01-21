@@ -1,0 +1,27 @@
+.main-div {
+    height: 100vh;
+    margin: 0 !important;
+
+    .left-part {
+        
+        background-color: #FBCA2E;
+    }
+
+    .right-part {
+
+        
+            .header {
+                
+                text-align: center;
+            }
+
+            .register {
+                margin: 0 20%;
+
+                Button {
+                    width: 100%;
+                }
+            }
+        
+    }
+}
