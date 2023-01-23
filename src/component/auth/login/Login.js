@@ -11,7 +11,9 @@ const Login = () => {
   return (
     <React.Fragment>
       <Row className='login-page'>
-        <Col lg={6} md={6} sm={12} className="img-col"></Col>
+      <Col lg={6} sm={6} md={6} className='img-col d-flex justify-content-center align-items-center'>
+      <h1>SMART PHYSIO</h1>
+    </Col>
         <Col lg={6} md={6} sm={12} >
           <div className="login-col">
             <Container>
