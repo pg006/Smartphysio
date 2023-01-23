@@ -3,9 +3,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "../App";
 import Login from "../component/auth/login/Login";
 import Register from "../component/auth/register/Register";
+import ChiefComplaint from "../pages/ChiefComplaint/ChiefComplaint";
 import Dashboard from "../pages/dashboard/Dashboard";
 import PatientRegister from "../pages/Patients/PatientRegister/PatientRegister";
 import Patients from "../pages/Patients/Patients";
+import Examination from "../pages/Examination/Examination";
+import Investigation from "../pages/Investigation/Investigation";
+import Notification from "../pages/Notification/Notification";
+import PainAssesment from "../pages/PainAssesment/PainAssesment";
+import PatientHistory from "../pages/PatientHistory/PatientHistory";
+import ScheduleAppoint from "../pages/ScheduleAppoint/ScheduleAppoint";
+import SpecialTest from "../pages/SpecialTest/SpecialTest";
 
 const AllRoutes = () => {
   return (
@@ -23,6 +31,14 @@ const AllRoutes = () => {
 
               <Route>
                 <Route path={`/dashboard`} element={<Dashboard />} />
+                <Route path={`/chief-complaint`} element={ <ChiefComplaint/>} />
+                <Route path={`/patient-history`} element={ <PatientHistory/>} />
+                <Route path={`/pain-assesment`} element={ <PainAssesment/>} />
+                <Route path={`/examination`} element={ <Examination/>} />
+                <Route path={`/special-test`} element={ <SpecialTest/>} />
+                <Route path={`/investigation`} element={ <Investigation/>} />
+                <Route path={`/schedule-appoint`} element={ <ScheduleAppoint/>} />
+                <Route path={`/notification`} element={ <Notification/>} />
               </Route>
 
               <Route>
