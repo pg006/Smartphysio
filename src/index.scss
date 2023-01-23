@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #282f53;
+  text-align: left;
+  background-color: #f0f0f5;
+}
+
+.horizontalMenucontainer {
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+.page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.page-main {
+  flex: 1 1 auto;
+}
+
+@media (min-width: 992px) {
+  .app-header {
+    padding-right: 10px;
+    padding-left: 285px;
+    z-index: 9 !important;
+  }
+}
+.app-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9999 !important;
+  border-bottom: 1px solid #e9edf4;
+  background: #ffffff;
+  transition: padding-left 0.3s ease;
+}
+.header {
+  background: #fff;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e9edf4;
+}
+@media (min-width: 992px) {
+  .sticky {
+    width: 100%;
+  }
+
+  .sticky-pin {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .product-grid6 .product-image6 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hor-content .container,
+  .hor-header .container,
+  .horizontal-main.hor-menu .container {
+    max-width: 85%;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.app-sidebar__toggle {
+  color: var(--primary-bg-color);
+  z-index: 1;
+  transition: padding-left 0.3s ease;
+  padding: 0 9px;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  right: 7px;
+}
+.app-sidebar__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-mini.sidenav-toggled .app-sidebar__toggle {
+  padding-left: 10px;
+}
+.app-sidebar__toggle:focus,
+.app-sidebar__toggle:hover {
+  text-decoration: none;
+}
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+.logo-horizontal {
+  display: none;
+}
+@media (min-width: 992px) {
+  .app-content {
+    margin-left: 270px;
+  }
+}
+
+@media (max-width: 991px) {
+  .app-content {
+    min-width: 100%;
+  }
+}
+
+@media print {
+  .app-content {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+}
+.app-content {
+  min-height: calc(100vh - 50px);
+  margin-bottom: 0 !important;
+  -webkit-transition: margin-left 450ms ease;
+  -o-transition: margin-left 450ms ease;
+  transition: margin-left 450ms ease;
+  overflow: hidden;
+  margin-top: 74px;
+}
+.app-content .side-app {
+  padding: 0px 20px 0 20px;
+}
+.app-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: #282f53;
+  z-index: 99;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 24px rgba(168, 180, 208, 0.1);
+  box-shadow: 0 8px 24px rgba(168, 180, 208, 0.1);
+  -webkit-transition: left 450ms ease, width 450ms ease;
+  -o-transition: left 450ms ease, width 450ms ease;
+  border-right: 1px solid #e9edf4;
+}
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+.side-header {
+  display: flex;
+  border-bottom: 1px solid #e9edf4;
+  border-right: 1px solid #e9edf4;
+  padding: 19px 17px;
+  align-items: center;
+  -webkit-transition: left 0.3s ease, width 450ms ease;
+  -o-transition: left 0.3s ease, width 450ms ease;
+  transition: left 0.3s ease, width 450ms ease;
+  height: 75px;
+}
+
+.side-header .header-brand-img.toggle-logo,
+.side-header .header-brand-img.light-logo {
+  height: 2.5rem;
+}
+.app.sidebar-mini.sidenav-toggled
+  .app-sidebar
+  .side-header
+  .header-brand-img.light-logo1 {
+  display: none !important;
+}
+
+.app.sidebar-mini.sidenav-toggled.sidenav-toggled-open
+  .app-sidebar
+  .side-header
+  .header-brand-img.light-logo1 {
+  display: block !important;
+}
+.side-header .header-brand1 {
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+.side-header .header-brand-img.desktop-logo {
+  display: none;
+}
+
+.sidebar-mini.sidenav-toggled
+  .app-sidebar
+  .side-header
+  .header-brand-img.desktop-logo {
+  display: none;
+}
+
+.side-header .header-brand-img.toggle-logo {
+  display: none;
+}
+
+.side-header .header-brand-img.light-logo1 {
+  display: block !important;
+}
+
+.sidebar-mini.sidenav-toggled
+  .app-sidebar
+  .side-header
+  .header-brand-img.light-logo1 {
+  display: none !important;
+}
+
+.sidebar-mini.sidenav-toggled
+  .app-sidebar
+  .side-header
+  .header-brand-img.toggle-logo {
+  display: none;
+  margin-right: 0;
+}
+.sidebar-mini.sidenav-toggled.sidenav-toggled-open
+  .side-header
+  .header-brand-img.light-logo1 {
+  display: block !important;
+}
+.sidebar-mini.sidenav-toggled.sidenav-toggled-open .side-header {
+  width: 270px !important;
+  display: flex !important;
+  padding: 17px 17px !important;
+}
+@media (min-width: 992px) {
+  .app.sidenav-toggled .app-content {
+    margin-left: 0;
+  }
+
+  .app.sidenav-toggled .app-sidebar {
+    left: 230px;
+  }
+
+  .app.sidenav-toggled .app-sidebar__overlay {
+    visibility: hidden;
+  }
+
+  .app-sidebar {
+    padding-top: 55px;
+  }
+
+  .side-header {
+    width: 270px;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+  }
+
+  .app.sidebar-mini.sidenav-toggled .side-header {
+    width: 80px !important;
+  }
+
+  .sidebar-mini footer.footer {
+    padding: 1.25rem 1.25rem 1.25rem 270px;
+  }
+
+  .sidebar-mini.sidenav-toggled footer.footer {
+    padding: 1.25rem 1.25rem 1.25rem 80px;
+  }
+}
+
+.rtl.header-light.transparent-mode .side-header {
+  border-right-color: inherit;
+  border-left-color: #e9edf4;
+}
+
+.rtl.icontext-menu.header-light.transparent-mode .side-header {
+  border-right-color: inherit;
+  border-left-color: #e9edf4;
+}
+@media (min-width: 992px) {
+  .rtl.dark-mode.light-menu .side-header {
+    border-left: 1px solid #e9edf4;
+    border-right: 0px;
+  }
+}
+.rtl.dark-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.color-header.color-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.color-header.gradient-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.gradient-header.color-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.gradient-header.gradient-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.dark-header.color-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+
+.rtl.dark-header.gradient-menu .side-header {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: inherit;
+}
+.rtl .side-header {
+  border-left: 1px solid #e9edf4;
+  border-right: initial;
+  -webkit-transition: right 0.3s ease, width 450ms ease;
+  -o-transition: right 0.3s ease, width 450ms ease;
+  transition: right 0.3s ease, width 450ms ease;
+}
+.horizontal .side-header {
+  display: none;
+}
+@media (max-width: 991px) {
+  .header-brand-img {
+    margin-left: 1.5rem;
+    margin: 3px auto;
+  }
+
+  .side-header {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .sidebar-mini.sidenav-toggled .side-header {
+    display: none;
+  }
+
+  .header.hor-header {
+    position: fixed;
+    border-bottom: 1px solid #e9edf4;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+  }
+
+  .header.hor-header .header-brand-img.light-logo {
+    display: none;
+  }
+
+  .header.hor-header .header-brand-img.desktop-logo {
+    display: none;
+    margin: 0 auto;
+  }
+
+  .header.hor-header .header-brand-img.light-logo1 {
+    display: block;
+  }
+
+  .header.hor-header .header-brand1 {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .header .form-inline {
+    margin-right: -2px;
+  }
+}

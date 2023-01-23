@@ -1,19 +1,29 @@
 import React from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import App from "../App";
 import Login from "../component/auth/login/Login";
 import Register from "../component/auth/register/Register";
+import Dashboard from "../pages/dashboard/Dashboard";
 
 const AllRoutes = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        
-          <Route path="/">
-            <Route index element={<Login />} />
-            <Route path="register" element={<Register />} />
-          </Route>
-      </Routes>
-    </BrowserRouter>
+    <React.Fragment>
+      <BrowserRouter>
+        <React.Suspense>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Login />} />
+              <Route path="register" element={<Register />} />
+            </Route>
+            <Route path={``} element={<App />}>
+              <Route>
+                <Route path={`/dashboard`} element={<Dashboard />} />
+              </Route>
+            </Route>
+          </Routes>
+        </React.Suspense>
+      </BrowserRouter>
+    </React.Fragment>
   );
 };
 
