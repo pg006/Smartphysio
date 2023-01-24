@@ -25,6 +25,7 @@ const CustomInput = (props) => {
     children,
     required,
     instruction,
+    textArea
   } = props;
   // console.log(props,"prop");
   return (
@@ -33,7 +34,7 @@ const CustomInput = (props) => {
         <Form.Group>
           <Row className="mb-3">
             <Col lg={3}>
-              <Form.Label style={{display: 'contents'}}>{label ? label : name}</Form.Label>
+              <Form.Label style={{display: "contents"}}>{label ? label : name}</Form.Label>
               {required ? (
                 <span
                   style={{
@@ -48,7 +49,31 @@ const CustomInput = (props) => {
                 </span>
               ) : null}
             </Col>
-            <Col lg={9}>
+            {textArea ? <Col lg={9}>
+              <Form.Control
+                name={name}
+                as='textarea'
+                placeholder={placeholder}
+                type={`text ${type}`}
+                maxLength={maxLength}
+                minLength={minLength}
+                className={`form-control ${className}`}
+                defaultValue={defaultValue}
+                id={id}
+                disabled={disabled}
+                rows={rows}
+                checked={checked}
+                onChange={onChange}
+                onBlur={onBlur}
+                value={value}
+                style={style}
+                invalid={
+                  required && errors && touched && errors[name] && touched[name]
+                    ? true
+                    : false
+                }
+              />
+            </Col> : <Col lg={9}>
               <Form.Control
                 name={name}
                 placeholder={placeholder}
@@ -71,7 +96,7 @@ const CustomInput = (props) => {
                     : false
                 }
               />
-            </Col>
+            </Col>}
           </Row>
           {required && touched && errors && touched[name] && errors[name] ? (
             <Form.Control.Feedback type="invalid">{errors[name]}</Form.Control.Feedback>

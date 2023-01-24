@@ -52,9 +52,7 @@ const PatientRegister = () => {
         handleSubmit,
         handleChange,
         values,
-        setValues,
         resetForm,
-        setFieldValue,
         errors,
         touched,
         handleBlur,
@@ -181,12 +179,31 @@ const PatientRegister = () => {
                             touched={touched}
                             required
                         />
-                        <div className='d-flex justify-content-start'>
-                            <Button className='m-2' variant='dark' type='submit'>Save</Button>
-                            <Button className='m-2' variant='dark'>Save/Next</Button>
-                            <Button className='m-2' variant='dark'>Clear</Button>
-                            <Button className='m-2' variant='dark'>Exit</Button>
-                        </div>
+
+
+                        <CustomInput
+                            textArea
+                            name="description"
+                            label="Chief Complaint"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            rows={4}
+                            placeholder="Enter your description"
+                            errors={errors}
+                            touched={touched}
+                        />
+                        <CustomInput
+                            textArea
+                            name="description"
+                            label="Patient History"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            rows={4}
+                            placeholder="Enter your description"
+                            errors={errors}
+                            touched={touched}
+                        />
+
                     </Col>
 
 
@@ -321,6 +338,12 @@ const PatientRegister = () => {
                             required
                         />
 
+                        <div className='d-flex justify-content-end m-2'>
+                            <Button className='m-2 w-15' variant='dark' type='submit'>Save</Button>
+                            <Button className='m-2' variant='dark'>Save/Next</Button>
+                            <Button className='m-2 w-15' variant='dark'>Clear</Button>
+                            <Button className='m-2 w-15' variant='dark'>Exit</Button>
+                        </div>
                     </Col>
 
                 </Row>
