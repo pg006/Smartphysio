@@ -33,7 +33,7 @@ const CustomInput = (props) => {
         <Form.Group>
           <Row className="mb-3">
             <Col lg={3}>
-              <Form.Label>{label ? label : name}</Form.Label>
+              <Form.Label style={{display: 'contents'}}>{label ? label : name}</Form.Label>
               {required ? (
                 <span
                   style={{
