@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import Select from "react-select";
-import { Label } from "reactstrap";
 
 const CustomSelect = (props) => {
     const {
@@ -31,7 +30,7 @@ const CustomSelect = (props) => {
             <Form.Group>
                 <Row className="mb-3">
                     <Col lg={3}>
-                        <Label>{label ? label : name}</Label>
+                        <label>{label ? label : name}</label>
                         {required ? (
                             <span
                                 style={{
