@@ -1,5 +1,6 @@
 import React from "react";
-import { FormGroup, Label, Input, FormFeedback, Row } from "reactstrap";
+import { Form, Button, Col, Container, Row, } from 'react-bootstrap'
+
 
 const CustomInput = (props) => {
   const {
@@ -25,57 +26,63 @@ const CustomInput = (props) => {
     required,
     instruction,
   } = props;
-
+// console.log(props,"prop");
   return (
     <React.Fragment>
-      <FormGroup>
-        <div className="d-flex">
-          <Label>{label ? label : name}</Label>
-          {required ? (
-            <span
-              style={{
-                color:
-                  required && errors && touched && errors[name] && touched[name]
-                    ? "red"
-                    : "",
-                paddingLeft: 2,
-              }}
-            >
-              *
-            </span>
+      <Form>
+        <Form.Group>
+          <Row className="mb-3">
+            <Col lg={3}>
+              <label>{label ? label : name}</label>
+              {required ? (
+                <span
+                  style={{
+                    color:
+                      required && errors && touched && errors[name] && touched[name]
+                        ? "red"
+                        : "",
+                    paddingLeft: 2,
+                  }}
+                >
+                  *
+                </span>
+              ) : null}
+            </Col>
+            <Col lg={9}>
+              <input
+                name={name}
+                placeholder={placeholder}
+                type={type}
+                maxLength={maxLength}
+                minLength={minLength}
+                className={`form-control ${className}`}
+                defaultValue={defaultValue}
+                id={id}
+                disabled={disabled}
+                rows={rows}
+                checked={checked}
+                onChange={onChange}
+                onBlur={onBlur}
+                value={value}
+                style={style}
+                // invalid={
+                //   required && errors && touched && errors[name] && touched[name]
+                //     ? true
+                //     : false
+                // }
+              />
+            </Col>
+          </Row>
+          {required && touched && errors && touched[name] && errors[name] ? (
+            <Form.Feedback type="invalid">{errors[name]}</Form.Feedback>
+          ) : instruction ? (
+            <div className="instruction" >
+              <span>{instruction}</span>
+            </div>
           ) : null}
-        </div>
-        <Input
-          name={name}
-          placeholder={placeholder}
-          type={type}
-          maxLength={maxLength}
-          minLength={minLength}
-          className={`form-control ${className}`}
-          defaultValue={defaultValue}
-          id={id}
-          disabled={disabled}
-          rows={rows}
-          checked={checked}
-          onChange={onChange}
-          onBlur={onBlur}
-          value={value}
-          style={style}
-          invalid={
-            required && errors && touched && errors[name] && touched[name]
-              ? true
-              : false
-          }
-        />
-        {required && touched && errors && touched[name] && errors[name] ? (
-          <FormFeedback type="invalid">{errors[name]}</FormFeedback>
-        ) : instruction ? (
-          <div className="instruction" >
-            <span>{instruction}</span>
-          </div>
-        ) : null}
-        {children}
-      </FormGroup>
+          {children}
+        </Form.Group>
+      </Form>
     </React.Fragment>
   );
 };
