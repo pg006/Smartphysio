@@ -23,24 +23,25 @@ const PatientRegister = () => {
     };
 
     const validationSchema = Yup.object({
-        // registerid: Yup.string().required("Please Enter Your Register Id"),
-        // name: Yup.string().required("Please Enter Your Name"),
-        // address: Yup.string().required("Please Enter Your Address"),
-        // mobilenumber: Yup.string()
-        // .max(10)
-        // .required("Please Enter Your Mobile.No"),
-        // email: Yup.string()
-        // .email("Must be a valid Email")
-        // .max(50)
-        // .required("Please Enter Your Email Address"),
-        // location: Yup.string().required("Please Enter Your Location "),
-        // city: Yup.string().required("Enter Your City"),
-        // contactperson: Yup.string().required("Please Enter Person Name"),
-        // age: Yup.string().required("Please Enter Your Age"),
-        // height: Yup.string().required("Please Enter Your Height"),
-        // weight: Yup.string().required("Please Enter Your Weight"),
-        // bmi: Yup.string().required("Enter Your BMI"),
+        registerid: Yup.string().required("Please Enter Your Register Id"),
+        name: Yup.string().required("Please Enter Your Name"),
+        address: Yup.string().required("Please Enter Your Address"),
+        mobilenumber: Yup.string()
+            .max(10)
+            .required("Please Enter Your Mobile.No"),
+        email: Yup.string()
+            .email("Must be a valid Email")
+            .max(50)
+            .required("Please Enter Your Email Address"),
+        location: Yup.string().required("Please Enter Your Location "),
+        city: Yup.string().required("Enter Your City"),
+        contactperson: Yup.string().required("Please Enter Person Name"),
+        age: Yup.string().required("Please Enter Your Age"),
+        height: Yup.string().required("Please Enter Your Height"),
+        weight: Yup.string().required("Please Enter Your Weight"),
+        bmi: Yup.string().required("Enter Your BMI"),
     });
+
     const onSubmit = (values) => {
         console.log("values", values);
         resetForm()
@@ -63,6 +64,8 @@ const PatientRegister = () => {
         validationSchema,
         onSubmit
     });
+    console.log(errors);
+
 
 
     return (

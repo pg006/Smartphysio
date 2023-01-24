@@ -26,14 +26,14 @@ const CustomInput = (props) => {
     required,
     instruction,
   } = props;
-// console.log(props,"prop");
+  // console.log(props,"prop");
   return (
     <React.Fragment>
       <Form>
         <Form.Group>
           <Row className="mb-3">
             <Col lg={3}>
-              <label>{label ? label : name}</label>
+              <Form.Label>{label ? label : name}</Form.Label>
               {required ? (
                 <span
                   style={{
@@ -49,10 +49,10 @@ const CustomInput = (props) => {
               ) : null}
             </Col>
             <Col lg={9}>
-              <input
+              <Form.Control
                 name={name}
                 placeholder={placeholder}
-                type={type}
+                type={`text ${type}`}
                 maxLength={maxLength}
                 minLength={minLength}
                 className={`form-control ${className}`}
@@ -65,16 +65,16 @@ const CustomInput = (props) => {
                 onBlur={onBlur}
                 value={value}
                 style={style}
-                // invalid={
-                //   required && errors && touched && errors[name] && touched[name]
-                //     ? true
-                //     : false
-                // }
+                invalid={
+                  required && errors && touched && errors[name] && touched[name]
+                    ? true
+                    : false
+                }
               />
             </Col>
           </Row>
           {required && touched && errors && touched[name] && errors[name] ? (
-            <Form.Feedback type="invalid">{errors[name]}</Form.Feedback>
+            <Form.Control.Feedback type="invalid">{errors[name]}</Form.Control.Feedback>
           ) : instruction ? (
             <div className="instruction" >
               <span>{instruction}</span>
