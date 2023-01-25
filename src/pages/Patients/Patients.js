@@ -48,14 +48,14 @@ const Patients = () => {
                 </div>
             </div>
 
-            {/* <div className='Table-container'>
+            <div className='Table-container'>
                 <TableData
                     resTableDataItems={PatientData}
                     isPagination={true}
                     isSelectable={false}
                     columns={columns}
                 />
-            </div> */}
+            </div>
 
         </Fragment>
     )
