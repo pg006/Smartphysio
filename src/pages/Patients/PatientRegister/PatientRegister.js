@@ -180,22 +180,23 @@ const PatientRegister = () => {
                             required
                         />
 
+                        <CustomInput
+                            type="text"
+                            placeholder=""
+                            name="bmi"
+                            label="BMI"
+                            onBlur={handleBlur}
+                            value={values.bmi}
+                            onChange={handleChange}
+                            errors={errors}
+                            touched={touched}
+                            required
+                        />
 
                         <CustomInput
                             textArea
                             name="description"
                             label="Chief Complaint"
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            rows={4}
-                            placeholder="Enter your description"
-                            errors={errors}
-                            touched={touched}
-                        />
-                        <CustomInput
-                            textArea
-                            name="description"
-                            label="Patient History"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             rows={4}
@@ -312,18 +313,6 @@ const PatientRegister = () => {
                         />
 
 
-                        <CustomInput
-                            type="text"
-                            placeholder=""
-                            name="bmi"
-                            label="BMI"
-                            onBlur={handleBlur}
-                            value={values.bmi}
-                            onChange={handleChange}
-                            errors={errors}
-                            touched={touched}
-                            required
-                        />
 
                         <CustomSelect
                             type="select"
@@ -338,13 +327,27 @@ const PatientRegister = () => {
                             required
                         />
 
+                        <CustomInput
+                            textArea
+                            name="description"
+                            label="Patient History"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            rows={4}
+                            placeholder="Enter your description"
+                            errors={errors}
+                            touched={touched}
+                        />
+
                         <div className='d-flex justify-content-end m-2'>
                             <Button className='m-2 w-15' variant='dark' type='submit'>Save</Button>
                             <Button className='m-2' variant='dark'>Save/Next</Button>
                             <Button className='m-2 w-15' variant='dark'>Clear</Button>
                             <Button className='m-2 w-15' variant='dark'>Exit</Button>
                         </div>
+
                     </Col>
+
 
                 </Row>
             </form>
