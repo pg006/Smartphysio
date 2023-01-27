@@ -27,7 +27,7 @@ export const TableData = (props) => {
 
 
   return (
-    <span className="datatable">
+    <div className="datatable">
       {/* <DataTableExtensions {...tableDatas}> */}
       {isSelectable ? (
         <DataTable
@@ -65,7 +65,7 @@ export const TableData = (props) => {
         />
       )}
       {/* </DataTableExtensions> */}
-    </span>
+    </div>
   );
 };
 

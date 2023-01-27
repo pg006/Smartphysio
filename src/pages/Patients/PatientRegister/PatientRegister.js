@@ -4,6 +4,7 @@ import CustomInput from '../../../Common/CustomInput/CustomInput'
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import CustomSelect from '../../../Common/CustomSelect/CustomSelect';
+import "./PatientRegister.scss"
 
 const PatientRegister = () => {
 
@@ -72,7 +73,7 @@ const PatientRegister = () => {
             <h3>Patient Register</h3>
 
             <form onSubmit={handleSubmit}>
-                <Row className='main-div'>
+                <Row className='main-div mt-5'>
 
                     <Col lg={6} md={6} sm={6}>
                         <CustomInput
@@ -340,10 +341,10 @@ const PatientRegister = () => {
                         />
 
                         <div className='d-flex justify-content-end m-2'>
-                            <Button className='m-2 w-15' variant='dark' type='submit'>Save</Button>
-                            <Button className='m-2' variant='dark'>Save/Next</Button>
-                            <Button className='m-2 w-15' variant='dark'>Clear</Button>
-                            <Button className='m-2 w-15' variant='dark'>Exit</Button>
+                            <Button className='btn m-2 w-15' variant='dark' type='submit'>Save</Button>
+                            <Button className='btn m-2' variant='dark'>Save/Next</Button>
+                            <Button className='btn m-2 w-15' variant='dark'>Clear</Button>
+                            <Button className='btn m-2 w-15' variant='dark'>Exit</Button>
                         </div>
 
                     </Col>
