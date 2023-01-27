@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Col, Container, Row, } from 'react-bootstrap'
+import { Form, Col, Row } from 'react-bootstrap'
 
 
 const CustomInput = (props) => {
@@ -34,7 +34,7 @@ const CustomInput = (props) => {
         <Form.Group>
           <Row className="mb-3">
             <Col lg={3}>
-              <Form.Label style={{display: "contents"}}>{label ? label : name}</Form.Label>
+              <Form.Label style={{ display: "contents" }}>{label ? label : name}</Form.Label>
               {required ? (
                 <span
                   style={{
