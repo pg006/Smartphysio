@@ -72,7 +72,7 @@ const Header = () => {
                             to="#"
                             onClick={() => SideMenuIcon()}
                         />
-                        <Link
+                        {/* <Link
                             className="logo-horizontal "
                             to={`${process.env.PUBLIC_URL}/Dashboard`}
                         >
@@ -86,16 +86,12 @@ const Header = () => {
                                 className="header-brand-img light-logo1"
                                 alt="logo"
                             />
-                        </Link>
+                        </Link> */}
 
                         <Navbar className="d-flex order-lg-2 ms-auto header-right-icons">
                             <Navbar.Toggle className="d-lg-none ms-auto header2">
                                 <span className="navbar-toggler-icon fe fe-more-vertical"></span>
                             </Navbar.Toggle>
-
-
-
-
                         </Navbar>
                     </div>
                 </div>
