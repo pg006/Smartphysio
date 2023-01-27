@@ -1,18 +1,9 @@
-.card {
-    background-color: white !important;
-    box-shadow: none !important;
+.main-div{
+
+    @media (max-width:1450px) {
+       
+      }
+
+
 }
 
-.nav-item {
-
-    .nav-link {
-        &:hover {
-            color: #f7b731 !important;
-        }
-    }
-
-    .nav-link.active {
-        background-color: #000000 !important;
-
-    }
-}

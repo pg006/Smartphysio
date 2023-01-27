@@ -5,20 +5,10 @@ import CustomInput from '../../Common/CustomInput/CustomInput'
 import { TableData } from '../../component/TableContainer/TableData'
 import "./SpecialTest.scss"
 
-const PatientData = [
-  {
-    REGISTER_ID: 1,
-    DATE: "25/1/23",
-    values: []
-  },
-  {
-    REGISTER_ID: 2,
-    DATE: "25/1/23",
-  },
-];
+
 
 const SpecialTest = () => {
-  const [chips, setChips] = useState(["Carical Spine", "Solder"])
+  const [chips, setChips] = useState(["Carical Spine", "Shoulder", "Elbow", "Forearm, Wrist & Hand", "Thoracic & Lumbar", "Knee", "Ankle & Foot"])
   const [tableData, setTableData] = useState([])
 
 
@@ -73,7 +63,7 @@ const SpecialTest = () => {
         const id = row.id
         const checked = !!row?.checked
         return (
-          <>
+          <div className='d-flex justify-content-start'>
             <Form className='d-flex'>
               <Form.Check
                 value="design"
@@ -81,6 +71,7 @@ const SpecialTest = () => {
                 label="Positive"
                 onChange={(e) => handleChange(true, id)}
                 checked={checked}
+                style={{marginRight:"10px"}}
               />
               <Form.Check
                 value="food"
@@ -90,7 +81,7 @@ const SpecialTest = () => {
                 checked={!checked}
               />
             </Form>
-          </>
+          </div>
         )
       },
       sortable: true,
@@ -100,7 +91,9 @@ const SpecialTest = () => {
         const name = row.values
         return (
           <>
-            <button onClick={() => onChipDelete(name)}>delete</button>
+            <div onClick={() => onChipDelete(name)}>
+            <i className="fa-solid fa-trash-can"/>
+            </div>
           </>
         )
       },
@@ -111,7 +104,7 @@ const SpecialTest = () => {
   return (
     <Fragment>
       <h3>Special Test</h3>
-      <div className='mt-5'>
+      <div className='main-div mt-5'>
         <Row>
           <Col lg={3} md={3} sm={3}>
             <CustomInput
