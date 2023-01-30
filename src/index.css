@@ -127,6 +127,10 @@ body {
   background-color: #f0f0f5;
 }
 
+.sc-fEXmlR {
+  display: none !important;
+}
+
 .number-font {
   font-weight: 600 !important;
 }

@@ -71,7 +71,7 @@ const SpecialTest = () => {
                 label="Positive"
                 onChange={(e) => handleChange(true, id)}
                 checked={checked}
-                style={{marginRight:"10px"}}
+                style={{ marginRight: "10px" }}
               />
               <Form.Check
                 value="food"
@@ -90,11 +90,11 @@ const SpecialTest = () => {
       cell: (row) => {
         const name = row.values
         return (
-          <>
-            <div onClick={() => onChipDelete(name)}>
-            <i className="fa-solid fa-trash-can"/>
+          <div className='d-flex justify-content-center w-100'>
+            <div onClick={() => onChipDelete(name)} >
+              <i className="fa-solid fa-trash-can" />
             </div>
-          </>
+          </div>
         )
       },
       sortable: true
@@ -106,7 +106,7 @@ const SpecialTest = () => {
       <h3>Special Test</h3>
       <div className='main-div mt-5'>
         <Row>
-          <Col lg={3} md={3} sm={3}>
+          <Col lg={6} md={6} sm={6}>
             <CustomInput
               type="number"
               placeholder="Enter Treatment Id"
@@ -120,7 +120,7 @@ const SpecialTest = () => {
             //  required
             />
           </Col>
-          <Col lg={3} md={3} sm={3}>
+          <Col lg={6} md={6} sm={6}>
             <CustomInput
               type="number"
               placeholder="Enter Register Id"
@@ -134,7 +134,7 @@ const SpecialTest = () => {
             //  required
             />
           </Col>
-          <Col lg={3} md={3} sm={3}>
+          <Col lg={6} md={6} sm={6}>
             <CustomInput
               type="text"
               placeholder="Enter Your Name"
@@ -148,7 +148,7 @@ const SpecialTest = () => {
             //  required
             />
           </Col>
-          <Col lg={3} md={3} sm={3}>
+          <Col lg={6} md={6} sm={6}>
             <CustomInput
               type="date"
               placeholder="Enter Date"
@@ -164,7 +164,7 @@ const SpecialTest = () => {
           </Col>
         </Row>
         <Row>
-          <Col xl={12}>
+          <Col xl={12} className="pt-3">
             <CommonChip chips={chips} onChange={(data) => onChipsChange(data)} />
             <TableData
               resTableDataItems={tableData}

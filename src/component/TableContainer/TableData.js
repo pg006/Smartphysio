@@ -27,7 +27,7 @@ export const TableData = (props) => {
 
 
   return (
-    <div className="datatable">
+    <div className="datatable" >
       {/* <DataTableExtensions {...tableDatas}> */}
       {isSelectable ? (
         <DataTable
