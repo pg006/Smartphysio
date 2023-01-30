@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "react-data-table-component-extensions/dist/index.css";
-
+import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 
 export const TableData = (props) => {
   const {
@@ -59,6 +59,7 @@ export const TableData = (props) => {
           title
           columns={columns ? columns : []}
           data={data ? data : []}
+          noHeader={true}
           // contextActions={contextActions}
           onSelectedRowsChange={handleRowSelected}
           clearSelectedRows={toggleCleared}

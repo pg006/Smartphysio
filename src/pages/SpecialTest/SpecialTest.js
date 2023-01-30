@@ -63,16 +63,20 @@ const SpecialTest = () => {
         const id = row.id
         const checked = !!row?.checked
         return (
-          <div className='d-flex justify-content-start'>
+            
             <Form className='d-flex'>
-              <Form.Check
+            <div className='fistr-div'>
+            <Form.Check
                 value="design"
                 type="radio"
                 label="Positive"
                 onChange={(e) => handleChange(true, id)}
                 checked={checked}
-                style={{ marginRight: "10px" }}
+                style={{paddingRight: "20px"}}
               />
+            </div>
+
+              <div className='second-div'>
               <Form.Check
                 value="food"
                 type="radio"
@@ -80,8 +84,10 @@ const SpecialTest = () => {
                 onChange={(e) => handleChange(false, id)}
                 checked={!checked}
               />
+              </div>
+             
             </Form>
-          </div>
+        
         )
       },
       sortable: true,
@@ -99,6 +105,18 @@ const SpecialTest = () => {
       },
       sortable: true
     },
+    {
+      name: "TEST",
+      cell: (row) => {
+        return (
+          <>
+            {row?.values}
+          </>
+        )
+      },
+      sortable: true
+    },
+   
   ];
 
   return (

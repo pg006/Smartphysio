@@ -28,8 +28,8 @@ const CustomSelect = (props) => {
     return (
         <React.Fragment>
             <Form.Group>
-                <Row className="mb-3">
-                    <Col lg={3}>
+                <Row className="maindiv mb-3">
+                    <Col className="label" lg={2}>
                         <label>{label ? label : name}</label>
                         {required ? (
                             <span
@@ -46,7 +46,7 @@ const CustomSelect = (props) => {
                         ) : null}
                     </Col>
 
-                    <Col lg={9}>
+                    <Col lg={10}>
                         <Select
                             name={name}
                             styles={styles}
