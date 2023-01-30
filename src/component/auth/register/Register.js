@@ -5,7 +5,7 @@ import "./Register.scss"
 
 const Register = () => {
   return (
-    <Row className='main-div'>
+    <Row className='register-main-div'>
       <Col lg={6} sm={6} md={6} className='left-part d-flex justify-content-center align-items-center'>
         <h1>SMART PHYSIO</h1>
       </Col>
@@ -17,26 +17,26 @@ const Register = () => {
             </div>
             <div className='register'>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <label>Clinic Name</label>
-                  <FormControl className='mt-2' type="text" placeholder="Clinic Name" />
-                </Form.Group>
-            
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <label>Clinic Name</label>
+                <FormControl className='mt-2' type="text" placeholder="Clinic Name" />
+              </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <label>Doctor Name</label>
-                  <FormControl  className='mt-2' type="text" placeholder="Doctor Name" />
-                </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <label>Email address</label>
-                  <FormControl className='mt-2'type="email" placeholder="Enter Your Email" />
-                </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <label>Doctor Name</label>
+                <FormControl className='mt-2' type="text" placeholder="Doctor Name" />
+              </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <label>Contact No</label>
-                  <FormControl className='mt-2'placeholder="Contact No" />
-                </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <label>Email address</label>
+                <FormControl className='mt-2' type="email" placeholder="Enter Your Email" />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <label>Contact No</label>
+                <FormControl className='mt-2' placeholder="Contact No" />
+              </Form.Group>
 
               <Row>
                 <Col lg={6} sm={6} md={3}>

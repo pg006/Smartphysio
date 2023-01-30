@@ -1,27 +1,22 @@
-.main-div {
-    height: 100vh;
-    margin: 0 !important;
+.register-main-div {
+  height: 100vh;
+  margin: 0 !important;
 
-    .left-part {
-        
-        background-color: #FBCA2E;
+  .left-part {
+    background-color: #fbca2e;
+  }
+
+  .right-part {
+    .header {
+      text-align: center;
     }
 
-    .right-part {
+    .register {
+      margin: 0 20%;
 
-        
-            .header {
-                
-                text-align: center;
-            }
-
-            .register {
-                margin: 0 20%;
-
-                Button {
-                    width: 100%;
-                }
-            }
-        
+      Button {
+        width: 100%;
+      }
     }
+  }
 }
