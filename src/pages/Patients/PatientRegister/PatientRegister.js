@@ -69,7 +69,7 @@ const PatientRegister = () => {
 
     return (
 
-        <div className='main-div'>
+        <div className='patient-register'>
             <h3>Patient Register</h3>
 
             <form onSubmit={handleSubmit}>

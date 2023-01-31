@@ -105,24 +105,13 @@ const SpecialTest = () => {
       },
       sortable: true
     },
-    {
-      name: "TEST",
-      cell: (row) => {
-        return (
-          <>
-            {row?.values}
-          </>
-        )
-      },
-      sortable: true
-    },
    
   ];
 
   return (
     <Fragment>
       <h3>Special Test</h3>
-      <div className='main-div mt-5'>
+      <div className='special-test mt-5'>
         <Row>
           <Col lg={6} md={6} sm={6}>
             <CustomInput

@@ -134,7 +134,7 @@ const Patients = () => {
     ];
     return (
         <Fragment>
-            <div className='d-flex justify-content-between align-item-center pt-2'>
+            <div className='patient-main-div d-flex justify-content-between align-item-center pt-2'>
                 <div className='title'><h3>Patients</h3></div>
                 <div className='side-btn'>
                     <Button variant="dark" type="submit" className='register-case' onClick={() => { naviagte("/patients/patientregister") }} >

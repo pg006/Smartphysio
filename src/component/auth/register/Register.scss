@@ -7,15 +7,38 @@
   }
 
   .right-part {
-    .header {
+   
+
+    .heading-div {
       text-align: center;
     }
 
-    .register {
-      margin: 0 20%;
+    .register-input {
 
-      Button {
-        width: 100%;
+      .reister-btn {
+        width: 78%;
+
+        @media (max-width:990px) {
+          width: 100%;
+        }
+      }
+
+      .login-span {
+        margin-left: 25px;
+        width: 75%;
+
+        @media (max-width:370px) {
+          width: 90%;
+        }
+      }
+
+      .label {
+        margin-left: 2px;
+
+        @media (max-width:1098px) {
+          width: 100%;
+        }
+
       }
     }
   }

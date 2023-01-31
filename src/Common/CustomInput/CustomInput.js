@@ -32,8 +32,8 @@ const CustomInput = (props) => {
     <React.Fragment>
       <Form>
         <Form.Group>
-          <Row className="maindiv mb-3">
-            <Col className="label" lg={2}>
+          <Row className={`mb-3 ${className}`}>
+            <Col className={`${className}`} lg={3}>
               <Form.Label style={{ display: "contents" }}>{label ? label : name}</Form.Label>
               {required ? (
                 <span
@@ -49,7 +49,7 @@ const CustomInput = (props) => {
                 </span>
               ) : null}
             </Col>
-            {textArea ? <Col lg={10}>
+            {textArea ? <Col lg={9}>
               <Form.Control
                 name={name}
                 as='textarea'
@@ -73,7 +73,7 @@ const CustomInput = (props) => {
                     : false
                 }
               />
-            </Col> : <Col lg={10}>
+            </Col> : <Col lg={9}>
               <Form.Control
                 name={name}
                 placeholder={placeholder}

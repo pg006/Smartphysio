@@ -1,67 +1,81 @@
 import React from 'react'
 import { Col, Form, Row, Button, FormControl, Container, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import CustomInput from '../../../Common/CustomInput/CustomInput'
 import "./Register.scss"
 
 const Register = () => {
   return (
-    <Row className='register-main-div'>
+    <Row className='register-main-div '>
       <Col lg={6} sm={6} md={6} className='left-part d-flex justify-content-center align-items-center'>
         <h1>SMART PHYSIO</h1>
       </Col>
-      <Col lg={6} sm={6} md={6} className='right-part  d-flex justify-content-center align-items-center'>
+      <Col lg={6} sm={6} md={6} className='right-part d-flex justify-content-center align-items-center'>
         <Container>
           <Form>
-            <div className='header'>
+            <div className='heading-div'>
               <h1>Register</h1>
             </div>
-            <div className='register'>
+            
+            <div className='register-input'>
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <label>Clinic Name</label>
-                <FormControl className='mt-2' type="text" placeholder="Clinic Name" />
-              </Form.Group>
+              <CustomInput
+                type="text"
+                placeholder="Clinic Name"
+                name="clinicname"
+                label="Clinic Name"
+                className="label"
+              />
+
+              <CustomInput
+                type="text"
+                placeholder="Doctor Name"
+                name="doctorname"
+                label="Doctor Name"
+                className="label"
+              />
+              <CustomInput
+                type="text"
+                placeholder="Email address"
+                name="email"
+                label="Email address"
+                className="label"
+              />
+              <CustomInput
+                type="number"
+                placeholder="Contact No"
+                name="contactno"
+                label="Contact No"
+                className="label"
+              />
+
+              <CustomInput
+                type="text"
+                placeholder="Password"
+                name="password"
+                label="Password"
+                className="label"
+              />
 
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <label>Doctor Name</label>
-                <FormControl className='mt-2' type="text" placeholder="Doctor Name" />
-              </Form.Group>
+              <CustomInput
+                type="text"
+                placeholder="Confirm Password"
+                name="cpassword"
+                label="Confirm Password"
+                className="label"
+              />
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <label>Email address</label>
-                <FormControl className='mt-2' type="email" placeholder="Enter Your Email" />
-              </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <label>Contact No</label>
-                <FormControl className='mt-2' placeholder="Contact No" />
-              </Form.Group>
+                <Button className="reister-btn" variant="dark" type="submit">
+                  Register
+                </Button>
 
-              <Row>
-                <Col lg={6} sm={6} md={3}>
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <label>Password</label>
-                    <FormControl className='mt-2' type="password" placeholder="Password" />
-                  </Form.Group>
-                </Col>
+                <div className="login-span mt-3 d-flex justify-content-end">
+                    Already have an account?<Link to="/"> Log in</Link>
+                </div>
 
-                <Col lg={6} sm={6} md={3}>
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <label>Confirm Password</label>
-                    <FormControl className='mt-2' type="password" placeholder="Confirm Password" />
-                  </Form.Group>
-                </Col>
-              </Row>
 
-              <Button variant="dark" type="submit">
-                Register
-              </Button>
-              <div className="d-flex justify-content-center">
-                <span className='mt-3'>
-                  Already have an account?<Link to="/"> Log in</Link>
-                </span>
-              </div>
             </div>
           </Form>
         </Container>
