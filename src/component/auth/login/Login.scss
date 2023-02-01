@@ -1,53 +1,57 @@
 .login-main-div {
-  margin: 0 !important;
+  // margin: 0 !important;
   height: 100vh;
 
   .left-part {
     background-color: #fbca2e;
+
+    @media (max-width: 991px) {
+      display: none !important;
+    }
   }
 
   .right-part {
-     
-      
     .heading-div {
       text-align: center;
-      margin-right: 50px;
+      padding-bottom: 10px;
+      // margin-right: 50px;
     }
 
     .login-input {
-
+      @media (max-width: 580px) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      @media (max-width: 767px) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
       .label {
-        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
 
-        @media (max-width:1098px) {
-          width: 100%;
-        }
-        @media (max-width:1000px) {
-          width: 104%;
-        }
-        @media (max-width:990px) {
-          width: 90%;
+        @media (max-width: 1000px) {
         }
       }
 
       .f-pass {
         display: flex;
-        justify-content: end;
-        width: 75%;
+        justify-content: center;
+        // width: 75%;
       }
 
       .lgn-btn {
-        width: 73%;
-        margin-left: 25px;
+        // width: 73%;
+        // margin-left: 25px;
       }
 
       .rgi-btn {
-        width: 73%;
-        margin-left: 25px;
+        // width: 73%;
+        // margin-left: 25px;
         border: 1px solid gray;
-      &:hover {
-        background-color:transparent;
-      }
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }

@@ -1,10 +1,14 @@
-.special-test{
+.special-test {
+  h3 {
+    color: #f6b733;
+  }
+
   // sc-fEXmlR kNUuTe rdt_TableHeader
-  .st-label{
-    @media (max-width:1200px) {
+  .st-label {
+    @media (max-width: 1200px) {
       width: 100%;
     }
-    @media (max-width:1175px) {
+    @media (max-width: 1175px) {
       width: 100%;
     }
   }

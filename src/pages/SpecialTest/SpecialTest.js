@@ -5,12 +5,9 @@ import CustomInput from '../../Common/CustomInput/CustomInput'
 import { TableData } from '../../component/TableContainer/TableData'
 import "./SpecialTest.scss"
 
-
-
 const SpecialTest = () => {
   const [chips, setChips] = useState(["Carical Spine", "Shoulder", "Elbow", "Forearm, Wrist & Hand", "Thoracic & Lumbar", "Knee", "Ankle & Foot"])
   const [tableData, setTableData] = useState([])
-
 
   const onChipsChange = (data) => {
     setChips(data)
@@ -27,6 +24,7 @@ const SpecialTest = () => {
   }
   const handleChange = (checked, id) => {
     let newData = tableData?.map((val) => {
+      console.log(val, "hgdfjhsdjfhsdfjsdh");
       return {
         ...val,
         checked: val?.id == id ? checked : val?.checked
@@ -63,20 +61,20 @@ const SpecialTest = () => {
         const id = row.id
         const checked = !!row?.checked
         return (
-            
-            <Form className='d-flex'>
+
+          <Form className='d-flex'>
             <div className='fistr-div'>
-            <Form.Check
+              <Form.Check
                 value="design"
                 type="radio"
                 label="Positive"
                 onChange={(e) => handleChange(true, id)}
                 checked={checked}
-                style={{paddingRight: "20px"}}
+                style={{ paddingRight: "20px" }}
               />
             </div>
 
-              <div className='second-div'>
+            <div className='second-div'>
               <Form.Check
                 value="food"
                 type="radio"
@@ -84,10 +82,10 @@ const SpecialTest = () => {
                 onChange={(e) => handleChange(false, id)}
                 checked={!checked}
               />
-              </div>
-             
-            </Form>
-        
+            </div>
+
+          </Form>
+
         )
       },
       sortable: true,
@@ -105,13 +103,13 @@ const SpecialTest = () => {
       },
       sortable: true
     },
-   
   ];
 
   return (
     <Fragment>
-      <h3>Special Test</h3>
-      <div className='special-test mt-5'>
+
+      <div className='special-test'>
+        <h3>Special Test</h3>
         <Row>
           <Col lg={6} md={6} sm={6}>
             <CustomInput
@@ -186,9 +184,7 @@ const SpecialTest = () => {
           </Col>
         </Row>
       </div>
-
     </Fragment>
-
   )
 }
 

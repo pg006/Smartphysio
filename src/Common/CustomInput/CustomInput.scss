@@ -1,12 +1,7 @@
-.maindiv{
-
-    
-    .label{
-        @media (max-width: 1430px)
-        {
-            flex: 0 0 auto;
-            width: 26%;
-        }
-    }
-    
+.custom_input {
+  ::placeholder {
+    color: #c2c2c2;
+  }
+  .label {
+  }
 }

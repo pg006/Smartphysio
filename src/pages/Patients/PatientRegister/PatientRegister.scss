@@ -1,16 +1,25 @@
 .patient-register {
+  h3 {
+    color: #f6b733;
+  }
+  .input-div {
+    .btn-row {
+      display: flex;
 
-    .input-div {
-
-        .lbl {
-            @media (max-width:1400px) {
-                width: 100%;
-            }
+      @media (max-width: 500px) {
+        display: unset;
+        // width: 50%;
+      }
+      .btns {
+        min-width: 100px;
+        @media (max-width: 500px) {
+          width: 200px;
         }
-
+      }
     }
+  }
 
-    .btn {
-        color: #f7b731;
-    }
+  .btn {
+    color: #f7b731;
+  }
 }

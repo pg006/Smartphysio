@@ -1,44 +1,36 @@
 .register-main-div {
   height: 100vh;
   margin: 0 !important;
+  .container {
+    max-width: unset !important;
+  }
 
   .left-part {
     background-color: #fbca2e;
+    @media (max-width: 991px) {
+      display: none !important;
+    }
   }
 
   .right-part {
-   
-
     .heading-div {
       text-align: center;
+      padding-bottom: 20px;
     }
 
     .register-input {
-
-      .reister-btn {
-        width: 78%;
-
-        @media (max-width:990px) {
-          width: 100%;
-        }
+      @media (max-width: 580px) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-bottom: 20px !important;
       }
-
-      .login-span {
-        margin-left: 25px;
-        width: 75%;
-
-        @media (max-width:370px) {
-          width: 90%;
-        }
+      @media (max-width: 767px) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
       }
-
-      .label {
-        margin-left: 2px;
-
-        @media (max-width:1098px) {
-          width: 100%;
-        }
-
+      .input_area {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

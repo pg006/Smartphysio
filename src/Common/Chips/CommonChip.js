@@ -1,5 +1,6 @@
 import React from 'react';
 import Chips from "react-chips";
+import "./CommonChip.scss"
 
 const CommonChip = (props) => {
     const {
@@ -10,13 +11,14 @@ const CommonChip = (props) => {
     } = props
 
     return (
-        <div>
+        <div className='hey'>
             <Chips
                 value={chips}
                 onChange={onChange}
                 suggestions={suggestions}
                 fromSuggestionsOnly={false}
                 createChipKeys={keys}
+                className="chips-data"
             />
         </div>
     );

@@ -21,6 +21,8 @@ const PatientRegister = () => {
         height: "",
         weight: "",
         bmi: "",
+        date: "",
+        dob: ""
     };
 
     const validationSchema = Yup.object({
@@ -41,6 +43,8 @@ const PatientRegister = () => {
         height: Yup.string().required("Please Enter Your Height"),
         weight: Yup.string().required("Please Enter Your Weight"),
         bmi: Yup.string().required("Enter Your BMI"),
+        date: Yup.string().required("Enter Date"),
+        dob: Yup.string().required("Enter Your BMI")
     });
 
     const onSubmit = (values) => {
@@ -73,8 +77,7 @@ const PatientRegister = () => {
             <h3>Patient Register</h3>
 
             <form onSubmit={handleSubmit}>
-                <Row className='input-div mt-5'>
-
+                <Row className='input-div mt-3'>
                     <Col lg={6} md={6} sm={6}>
                         <CustomInput
                             type="text"
@@ -87,7 +90,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -101,7 +104,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -115,7 +118,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -129,7 +132,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
 
@@ -144,7 +147,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -158,7 +161,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -172,7 +175,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -186,7 +189,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -200,9 +203,8 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
-
                         <CustomInput
                             textArea
                             name="description"
@@ -213,28 +215,24 @@ const PatientRegister = () => {
                             placeholder="Enter your description"
                             errors={errors}
                             touched={touched}
-                            className="lbl"
                         />
-
                     </Col>
-
-
-
                     <Col className='m-0' lg={6} md={6} sm={6}>
                         <CustomInput
                             type="date"
                             name="date"
                             label="Date"
                             onBlur={handleBlur}
+                            value={values.date}
                             onChange={handleChange}
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomSelect
-                            type=""
+                            type="select"
                             placeholder=""
                             name="patienttype"
                             label="Patient Type"
@@ -244,7 +242,6 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
                         />
 
                         <CustomInput
@@ -253,11 +250,12 @@ const PatientRegister = () => {
                             name="dob"
                             label="DOB"
                             onBlur={handleBlur}
+                            value={values.dob}
                             onChange={handleChange}
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomInput
@@ -271,7 +269,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
                         <CustomSelect
@@ -285,7 +283,6 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
                         />
 
                         <CustomSelect
@@ -299,7 +296,6 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
                         />
 
                         <CustomInput
@@ -313,7 +309,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
 
@@ -328,7 +324,7 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
 
 
@@ -344,7 +340,6 @@ const PatientRegister = () => {
                             errors={errors}
                             touched={touched}
                             required
-                            className="lbl"
                         />
 
                         <CustomInput
@@ -357,19 +352,19 @@ const PatientRegister = () => {
                             placeholder="Enter your description"
                             errors={errors}
                             touched={touched}
-                            className="lbl"
+                            ColClassName="d-flex"
                         />
-
-                        <div className='d-flex justify-content-end m-2'>
-                            <Button className='btn m-2 w-15' variant='dark' type='submit'>Save</Button>
-                            <Button className='btn m-2' variant='dark'>Save/Next</Button>
-                            <Button className='btn m-2 w-15' variant='dark'>Clear</Button>
-                            <Button className='btn m-2 w-15' variant='dark'>Exit</Button>
-                        </div>
-
                     </Col>
-
-
+                    <Col lg={12} md={12} sm={12} className='justify-content-end btn-row'>
+                        <div className='d-flex '>
+                            <Button className='btns m-2' variant='dark' type='submit'>Save</Button>
+                            <Button className='btns m-2' variant='dark'>Save/Next</Button>
+                        </div>
+                        <div className='d-flex'>
+                            <Button className='btns m-2' variant='dark'>Clear</Button>
+                            <Button className='btns m-2' variant='dark'>Exit</Button>
+                        </div>
+                    </Col>
                 </Row>
             </form>
 

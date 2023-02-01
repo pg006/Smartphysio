@@ -13,20 +13,16 @@ const Login = () => {
   return (
     <React.Fragment>
       <Row className='login-main-div'>
-        <Col lg={6} sm={6} md={6} className="left-part d-flex justify-content-center align-items-center">
+        <Col lg={6} sm={0} md={0} className="left-part d-flex justify-content-center align-items-center">
           <h1>SMART PHYSIO</h1>
         </Col>
-
-        <Col lg={6} md={6} sm={6} className="right-part  d-flex justify-content-center align-items-center">
-
+        <Col lg={6} md={12} sm={12} className="right-part  d-flex justify-content-center align-items-center">
           <Container>
             <Form>
-
               <div className='heading-div'>
                 <h1>Login</h1>
               </div>
-
-              <div className='login-input'>
+              <div className='login-input px-9'>
                 <CustomInput
                   type="text"
                   placeholder="Clinic Name"
@@ -34,7 +30,6 @@ const Login = () => {
                   label="Clinic Name"
                   className="label"
                 />
-
                 <CustomInput
                   type="text"
                   placeholder="Doctor Name"
@@ -42,20 +37,18 @@ const Login = () => {
                   label="Doctor Name"
                   className="label"
                 />
-
                 <div className='f-pass'>
                   Forgot Password?
                 </div>
-
-                <Button variant="dark" type="submit" className='lgn-btn mb-3 mt-2'>
-                  Login
-                </Button>
-                <Button variant='light' type="submit" className='rgi-btn' onClick={() => RouteChange("/register")}>
-                  Register
-                </Button>
-
+                <div className='d-grid'>
+                  <Button variant="dark" type="submit" className='lgn-btn mb-3 mt-2' onClick={() => RouteChange("/dashboard")}>
+                    Login
+                  </Button>
+                  <Button variant='light' className='rgi-btn' onClick={() => RouteChange("/register")}>
+                    Register
+                  </Button>
+                </div>
               </div>
-
             </Form>
           </Container>
         </Col>

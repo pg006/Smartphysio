@@ -25,16 +25,19 @@ const CustomInput = (props) => {
     children,
     required,
     instruction,
-    textArea
+    textArea,
+    classNames,
+    onKeyDown,
+    ColClassName
   } = props;
   // console.log(props,"prop");
   return (
     <React.Fragment>
-      <Form>
+      <Form className="custom_input">
         <Form.Group>
-          <Row className={`mb-3 ${className}`}>
-            <Col className={`${className}`} lg={3}>
-              <Form.Label style={{ display: "contents" }}>{label ? label : name}</Form.Label>
+          <Row className={`mb-3 ${classNames}`}>
+            <Col lg={12} md={12} className={ColClassName}>
+              <Form.Label>{label ? label : name}</Form.Label>
               {required ? (
                 <span
                   style={{
@@ -49,7 +52,7 @@ const CustomInput = (props) => {
                 </span>
               ) : null}
             </Col>
-            {textArea ? <Col lg={9}>
+            {textArea ? <Col lg={12}>
               <Form.Control
                 name={name}
                 as='textarea'
@@ -67,13 +70,14 @@ const CustomInput = (props) => {
                 onBlur={onBlur}
                 value={value}
                 style={style}
+                onKeyDown={onKeyDown}
                 invalid={
                   required && errors && touched && errors[name] && touched[name]
                     ? true
                     : false
                 }
               />
-            </Col> : <Col lg={9}>
+            </Col> : <Col lg={12}>
               <Form.Control
                 name={name}
                 placeholder={placeholder}
