@@ -1,5 +1,16 @@
-.patient-register{
-    .btn{
+.patient-register {
+
+    .input-div {
+
+        .lbl {
+            @media (max-width:1400px) {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .btn {
         color: #f7b731;
     }
 }

@@ -13,6 +13,7 @@ const CustomSelect = (props) => {
         errors,
         touched,
         required,
+        className
     } = props;
 
     const styles = {
@@ -28,8 +29,8 @@ const CustomSelect = (props) => {
     return (
         <React.Fragment>
             <Form.Group>
-                <Row className="maindiv mb-3">
-                    <Col className="lbl" lg={3}>
+                <Row className={`mb-3 ${className}`}>
+                    <Col className={`${className}`} lg={3}>
                         <label>{label ? label : name}</label>
                         {required ? (
                             <span

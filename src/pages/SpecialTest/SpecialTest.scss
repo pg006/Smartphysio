@@ -1,5 +1,13 @@
 .special-test{
   // sc-fEXmlR kNUuTe rdt_TableHeader
+  .st-label{
+    @media (max-width:1200px) {
+      width: 100%;
+    }
+    @media (max-width:1175px) {
+      width: 100%;
+    }
+  }
   .sc-fEXmlR {
     display: none !important;
   }

@@ -119,6 +119,7 @@ const SpecialTest = () => {
               placeholder="Enter Treatment Id"
               name="mobilenumber"
               label="Treatment Id"
+              className="st-label"
             //  onBlur={handleBlur}
             //  value={values.mobilenumber}
             //  onChange={handleChange}
@@ -133,6 +134,7 @@ const SpecialTest = () => {
               placeholder="Enter Register Id"
               name="mobilenumber"
               label="Register Id"
+              className="st-label"
             //  onBlur={handleBlur}
             //  value={values.mobilenumber}
             //  onChange={handleChange}
@@ -147,6 +149,7 @@ const SpecialTest = () => {
               placeholder="Enter Your Name"
               name="name"
               label="Name"
+              className="st-label"
             //  onBlur={handleBlur}
             //  value={values.mobilenumber}
             //  onChange={handleChange}
@@ -161,6 +164,7 @@ const SpecialTest = () => {
               placeholder="Enter Date"
               name="date"
               label="Date"
+              className="st-label"
             //  onBlur={handleBlur}
             //  value={values.mobilenumber}
             //  onChange={handleChange}
