@@ -97,7 +97,7 @@ const SpecialTest = () => {
         return (
           <div className='d-flex justify-content-center w-100'>
             <div onClick={() => onChipDelete(name)} >
-              <BsTrash />
+              <BsTrash className='i-1'/>
             </div>
           </div>
         )

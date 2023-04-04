@@ -9,6 +9,8 @@ export const MENUITEMS = [
             { path: `/investigation`, icon: 'fe fe-map', type: 'link', active: false, selected: false, title: 'Investigation' },
             { path: `/schedule-appoint`, icon: 'fe fe-layout', type: 'link', active: false, selected: false, title: 'Schedule Appoint' },
             { path: `/notification`, icon: 'fe fe-bell', type: 'link', active: false, selected: false, title: 'Notification' },
+            { path: `/diagnosis`, icon: 'fe fe-activity', type: 'link', active: false, selected: false, title: 'Diagnosis' },
+
         ]
     },
 ]

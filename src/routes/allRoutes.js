@@ -14,6 +14,7 @@ import PainAssesment from "../pages/PainAssesment/PainAssesment";
 import PatientHistory from "../pages/PatientHistory/PatientHistory";
 import ScheduleAppoint from "../pages/ScheduleAppoint/ScheduleAppoint";
 import SpecialTest from "../pages/SpecialTest/SpecialTest";
+import Diagnosis from "../pages/Diagnosis/Diagnosis";
 
 const AllRoutes = () => {
   return (
@@ -39,6 +40,8 @@ const AllRoutes = () => {
                 <Route path={`/investigation`} element={ <Investigation/>} />
                 <Route path={`/schedule-appoint`} element={ <ScheduleAppoint/>} />
                 <Route path={`/notification`} element={ <Notification/>} />
+                <Route path={`/diagnosis`} element={ <Diagnosis/>} />
+
               </Route>
 
               <Route>

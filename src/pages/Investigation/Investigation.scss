@@ -1,0 +1,30 @@
+.investigation-div {
+    .top-div {
+        h3 {
+            color: #f6b733;
+        }
+    }
+
+    .form-div {
+        .btn-div {
+            .btns {
+                color: #f7b731;
+                background-color: black;
+                height: 40px;
+                width: 100px;
+                border: none;
+                border-radius: 5px;
+
+                @media (max-width: 500px) {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.i-1{
+    color: red;
+    height: 20px;
+    width: 20px;
+  }
