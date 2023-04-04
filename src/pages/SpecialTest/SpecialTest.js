@@ -1,9 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import { Card, Col, Form, Nav, Row, Tab } from 'react-bootstrap'
+import { Col, Form, Row } from 'react-bootstrap'
 import CommonChip from '../../Common/Chips/CommonChip'
 import CustomInput from '../../Common/CustomInput/CustomInput'
 import { TableData } from '../../component/TableContainer/TableData'
 import "./SpecialTest.scss"
+import { BsTrash } from "react-icons/bs";
+
 
 const SpecialTest = () => {
   const [chips, setChips] = useState(["Carical Spine", "Shoulder", "Elbow", "Forearm, Wrist & Hand", "Thoracic & Lumbar", "Knee", "Ankle & Foot"])
@@ -24,7 +26,6 @@ const SpecialTest = () => {
   }
   const handleChange = (checked, id) => {
     let newData = tableData?.map((val) => {
-      console.log(val, "hgdfjhsdjfhsdfjsdh");
       return {
         ...val,
         checked: val?.id == id ? checked : val?.checked
@@ -96,7 +97,7 @@ const SpecialTest = () => {
         return (
           <div className='d-flex justify-content-center w-100'>
             <div onClick={() => onChipDelete(name)} >
-              <i className="fa-solid fa-trash-can" />
+              <BsTrash />
             </div>
           </div>
         )

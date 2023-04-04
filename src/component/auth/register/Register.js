@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Form, Row, Button, FormControl, Container, } from 'react-bootstrap'
+import { Col, Form, Row, Container, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import CustomInput from '../../../Common/CustomInput/CustomInput'
 import "./Register.scss"
@@ -72,9 +72,9 @@ const Register = () => {
                 </div>
               </div>
               <Col lg={6} md={6} sm={6} className="d-grid">
-                <Button className="register-btn" variant="dark" type="submit">
+                <button className="register-btn" variant="dark" type="submit">
                   Register
-                </Button>
+                </button>
               </Col>
             </Row>
           </Form>

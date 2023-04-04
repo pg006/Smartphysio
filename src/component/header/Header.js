@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
-import logo from "../../assets/images/download.png";
-import logo3 from "../../assets/images/download.png";
+// import logo from "../../assets/images/download.png";
+// import logo3 from "../../assets/images/download.png";
 const SideMenuIcon = () => {
     document.querySelector(".app")?.classList.toggle("sidenav-toggled");
 };

@@ -1,9 +1,20 @@
-.patient-main-div{
+.patient-main-div {
+    .title {
+        h3 {
+            color: #f7b731;
+        }
+    }
+
     .side-btn {
 
         .register-case {
             color: #f7b731;
+            background-color: black;
+            height: 40px;
+            width: 110px;
+            border: none;
+            border-radius: 5px;
         }
-    
+
     }
 }

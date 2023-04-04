@@ -2,10 +2,6 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { MENUITEMS } from "./Sidemenu/Sidemenu";
 import PerfectScrollbar from "react-perfect-scrollbar";
-import logo from "../../assets/images/download.png";
-import logo1 from "../../assets/images/download.png";
-import logo2 from "../../assets/images/download.png";
-import logo3 from "../../assets/images/download.png";
 
 const Onhover = () => {
   if (document.querySelector(".app")?.classList.contains("sidenav-toggled"))

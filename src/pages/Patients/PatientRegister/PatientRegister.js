@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+import { Col,Row } from 'react-bootstrap'
 import CustomInput from '../../../Common/CustomInput/CustomInput'
 import * as Yup from "yup";
 import { useFormik } from "formik";
@@ -357,12 +357,12 @@ const PatientRegister = () => {
                     </Col>
                     <Col lg={12} md={12} sm={12} className='justify-content-end btn-row'>
                         <div className='d-flex '>
-                            <Button className='btns m-2' variant='dark' type='submit'>Save</Button>
-                            <Button className='btns m-2' variant='dark'>Save/Next</Button>
+                            <button className='btns m-2' type='submit'>Save</button>
+                            <button className='btns m-2'>Save/Next</button>
                         </div>
                         <div className='d-flex'>
-                            <Button className='btns m-2' variant='dark'>Clear</Button>
-                            <Button className='btns m-2' variant='dark'>Exit</Button>
+                            <button className='btns m-2'>Clear</button>
+                            <button className='btns m-2'>Exit</button>
                         </div>
                     </Col>
                 </Row>

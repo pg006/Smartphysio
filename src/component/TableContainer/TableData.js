@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "react-data-table-component-extensions/dist/index.css";
-import DoubleScrollbar from 'react-shadowed-double-scrollbar';
+// import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 
 export const TableData = (props) => {
   const {

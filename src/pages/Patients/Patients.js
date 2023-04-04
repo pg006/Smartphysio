@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Button } from 'react-bootstrap'
 import { useNavigate } from "react-router";
 import { TableData } from '../../component/TableContainer/TableData';
 import "./Patients.scss"
@@ -11,7 +10,7 @@ const Patients = () => {
         {
             REGISTER_ID: 1,
             DATE: "25/1/23",
-            PATIENT_NAME: "ABCD",
+            PATIENT_NAME: "Isha",
             MOBILE_NO: "1234567891",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -20,7 +19,7 @@ const Patients = () => {
         {
             REGISTER_ID: 2,
             DATE: "25/1/23",
-            PATIENT_NAME: "EFGH",
+            PATIENT_NAME: "Nisha",
             MOBILE_NO: "4578894512",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -29,7 +28,7 @@ const Patients = () => {
         {
             REGISTER_ID: 3,
             DATE: "25/1/23",
-            PATIENT_NAME: "IJKL",
+            PATIENT_NAME: "Liza",
             MOBILE_NO: "1245785623",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -38,7 +37,7 @@ const Patients = () => {
         {
             REGISTER_ID: 4,
             DATE: "25/1/23",
-            PATIENT_NAME: "MNOP",
+            PATIENT_NAME: "Daisy",
             MOBILE_NO: "1223455689",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -47,7 +46,7 @@ const Patients = () => {
         {
             REGISTER_ID: 5,
             DATE: "25/1/23",
-            PATIENT_NAME: "QRST",
+            PATIENT_NAME: "John",
             MOBILE_NO: "5689231245",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -56,7 +55,7 @@ const Patients = () => {
         {
             REGISTER_ID: 6,
             DATE: "25/1/23",
-            PATIENT_NAME: "UVWX",
+            PATIENT_NAME: "Marke",
             MOBILE_NO: "2356894512",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -65,7 +64,7 @@ const Patients = () => {
         {
             REGISTER_ID: 7,
             DATE: "25/1/23",
-            PATIENT_NAME: "YZAB",
+            PATIENT_NAME: "Akash",
             MOBILE_NO: "1223455678",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -74,7 +73,7 @@ const Patients = () => {
         {
             REGISTER_ID: 8,
             DATE: "25/1/23",
-            PATIENT_NAME: "CDEF",
+            PATIENT_NAME: "Jemish",
             MOBILE_NO: "2154788965",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -83,7 +82,7 @@ const Patients = () => {
         {
             REGISTER_ID: 9,
             DATE: "25/1/23",
-            PATIENT_NAME: "GHIJ",
+            PATIENT_NAME: "Akansha",
             MOBILE_NO: "3265895421",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -92,7 +91,7 @@ const Patients = () => {
         {
             REGISTER_ID: 10,
             DATE: "25/1/23",
-            PATIENT_NAME: "KLMN",
+            PATIENT_NAME: "Pragati",
             MOBILE_NO: "896532215",
             ADDRESS:"101,STREET",
             LOCATION:"US"
@@ -137,9 +136,9 @@ const Patients = () => {
             <div className='patient-main-div d-flex justify-content-between align-item-center pt-2'>
                 <div className='title'><h3>Patients</h3></div>
                 <div className='side-btn'>
-                    <Button variant="dark" type="submit" className='register-case' onClick={() => { naviagte("/patients/patientregister") }} >
+                    <button  type="submit" className='register-case' onClick={() => { naviagte("/patients/patientregister") }} >
                         Register Case
-                    </Button>
+                    </button>
                 </div>
             </div>
 

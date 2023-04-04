@@ -1,12 +1,14 @@
 .register-main-div {
   height: 100vh;
   margin: 0 !important;
+
   .container {
     max-width: unset !important;
   }
 
   .left-part {
     background-color: #fbca2e;
+
     @media (max-width: 991px) {
       display: none !important;
     }
@@ -24,13 +26,23 @@
         padding-right: 20px !important;
         padding-bottom: 20px !important;
       }
+
       @media (max-width: 767px) {
         padding-left: 20px !important;
         padding-right: 20px !important;
       }
+
       .input_area {
         display: flex;
         flex-direction: column;
+      }
+
+      .register-btn {
+        color: #f7b731;
+        background-color: black;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
       }
     }
   }

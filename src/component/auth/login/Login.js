@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import { Row, Col, Container, Form } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 import CustomInput from '../../../Common/CustomInput/CustomInput';
 import './Login.scss'
@@ -41,12 +41,12 @@ const Login = () => {
                   Forgot Password?
                 </div>
                 <div className='d-grid'>
-                  <Button variant="dark" type="submit" className='lgn-btn mb-3 mt-2' onClick={() => RouteChange("/dashboard")}>
+                  <button  type="submit" className='lgn-btn mb-3 mt-2' onClick={() => RouteChange("/dashboard")}>
                     Login
-                  </Button>
-                  <Button variant='light' className='rgi-btn' onClick={() => RouteChange("/register")}>
+                  </button>
+                  <button  className='rgi-btn' onClick={() => RouteChange("/register")}>
                     Register
-                  </Button>
+                  </button>
                 </div>
               </div>
             </Form>

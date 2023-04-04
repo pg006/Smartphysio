@@ -2,6 +2,7 @@
   h3 {
     color: #f6b733;
   }
+
   .input-div {
     .btn-row {
       display: flex;
@@ -10,8 +11,17 @@
         display: unset;
         // width: 50%;
       }
+
       .btns {
+        color: #f7b731;
+        background-color: black;
+        height: 40px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+
         min-width: 100px;
+
         @media (max-width: 500px) {
           width: 200px;
         }
