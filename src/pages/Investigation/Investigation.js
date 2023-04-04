@@ -11,7 +11,6 @@ import CustomSelect from '../../Common/CustomSelect/CustomSelect'
 import { TableData } from '../../component/TableContainer/TableData'
 
 const Investigation = () => {
-  const [tableData, setTableData] = useState([])
   
   const [investigationData, setIncestigationData] = useState([0 , 1 , 2])
   const [pagination, setPagination] = useState({

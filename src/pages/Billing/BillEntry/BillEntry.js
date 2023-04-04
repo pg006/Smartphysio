@@ -12,6 +12,10 @@ const BillEntry = () => {
       NUMBER: "1",
       AMOUNT: "0.00",
     },
+    {
+      NUMBER: "2",
+      AMOUNT: "0.00",
+    },
   ];
   const columns = [
     {
@@ -111,59 +115,66 @@ const BillEntry = () => {
             columns={columns}
           />
         </div>
-        <Row className="d-flex justify-content-between mx-2">
-          <Col lg={6} className="">
-            <CustomInput
-              textArea
-              placeholder="Notes"
-              rows="3"
-              className="w-80"
-            />
-            <div className="btn-div d-flex justify-content-center">
-              <button className="btns m-2" type="submit">
-                Save
-              </button>
-              <button className="btns m-2">Print</button>
-              <button className="btns m-2">Exit</button>
-            </div>
-          </Col>
-          <Col lg={6} className="">
-            <div className="d-flex">
+        <div className="d-flex">
+          <Row className="w-100">
+            <Col lg={6} className="w-100">
+              <CustomInput
+                textArea
+                placeholder="Notes"
+                label='Notes'
+                rows="4"
+                className="w-80"
+              />
+              <div className="btn-div d-flex justify-content-center">
+                <button className="btns m-2" type="submit"> Save</button>
+                <button className="btns m-2">Print</button>
+                <button className="btns m-2">Exit</button>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6} className="">
               <CustomInput
                 type="text"
                 placeholder="Enter Amount"
                 name="amount"
                 label="Total Amount"
-                className="input mx-2"
+                className="input"
               />
+
+            </Col>
+            <Col lg={6}>
               <CustomInput
                 type="text"
                 placeholder="Enter Discount"
                 name="discount"
                 label="Discount"
-                className="input-mx-2"
+                className="input"
               />
-            </div>
-            <div className="d-flex">
+            </Col>
+            <Col lg={6}>
               <CustomInput
                 type="text"
                 placeholder="Enter Amount"
                 name="netamount"
                 label="Net Amount"
-                className="input mx-2"
+                className="input"
               />
+            </Col>
+            <Col lg={6}>
               <CustomSelect
                 type="text"
                 placeholder=""
                 name="payment"
                 label="Payment Mode"
-                className="input mx-2 w-100"
+                className="input w-100"
               />
-            </div>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
+
+        </div>
       </div>
-    </React.Fragment>
+    </React.Fragment >
   );
 };
 

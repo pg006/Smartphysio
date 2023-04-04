@@ -52,51 +52,7 @@ const Patients = () => {
             LOCATION: "US"
 
         },
-        {
-            REGISTER_ID: 6,
-            DATE: "25/1/23",
-            PATIENT_NAME: "Marke",
-            MOBILE_NO: "2356894512",
-            ADDRESS: "101,STREET",
-            LOCATION: "US"
-
-        },
-        {
-            REGISTER_ID: 7,
-            DATE: "25/1/23",
-            PATIENT_NAME: "Akash",
-            MOBILE_NO: "1223455678",
-            ADDRESS: "101,STREET",
-            LOCATION: "US"
-
-        },
-        {
-            REGISTER_ID: 8,
-            DATE: "25/1/23",
-            PATIENT_NAME: "Jemish",
-            MOBILE_NO: "2154788965",
-            ADDRESS: "101,STREET",
-            LOCATION: "US"
-
-        },
-        {
-            REGISTER_ID: 9,
-            DATE: "25/1/23",
-            PATIENT_NAME: "Akansha",
-            MOBILE_NO: "3265895421",
-            ADDRESS: "101,STREET",
-            LOCATION: "US"
-
-        },
-        {
-            REGISTER_ID: 10,
-            DATE: "25/1/23",
-            PATIENT_NAME: "Pragati",
-            MOBILE_NO: "896532215",
-            ADDRESS: "101,STREET",
-            LOCATION: "US"
-
-        },
+      
     ];
     const columns = [
         {
