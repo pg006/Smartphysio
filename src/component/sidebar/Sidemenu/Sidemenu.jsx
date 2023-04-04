@@ -10,7 +10,7 @@ export const MENUITEMS = [
             { path: `/schedule-appoint`, icon: 'fe fe-layout', type: 'link', active: false, selected: false, title: 'Schedule Appoint' },
             { path: `/notification`, icon: 'fe fe-bell', type: 'link', active: false, selected: false, title: 'Notification' },
             { path: `/diagnosis`, icon: 'fe fe-activity', type: 'link', active: false, selected: false, title: 'Diagnosis' },
-
+            { path: `billing`, icon: 'fe fe-users', type: 'link', active: false, selected: false, title: 'Bill Entry' }
         ]
     },
 ]

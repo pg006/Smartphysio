@@ -1,0 +1,23 @@
+.billentry-main-div{
+    h3 {
+        color: #f6b733;
+      }
+      .icon{
+        height: 20px;
+        width: 20px;
+      }
+      .btn-div {
+        .btns {
+            color: #f7b731;
+            background-color: black;
+            height: 40px;
+            width: 80px;
+            border: none;
+            border-radius: 5px;
+
+            @media (max-width: 500px) {
+                width: 200px;
+            }
+        }
+    }
+}
