@@ -69,13 +69,8 @@ const Diagnosis = () => {
                             placeholder="Enter Treatment Id"
                             name="mobilenumber"
                             label="Treatment Id"
-                            className="st-label"
-                        //  onBlur={handleBlur}
-                        //  value={values.mobilenumber}
-                        //  onChange={handleChange}
-                        //  errors={errors}
-                        //  touched={touched}
-                        //  required
+                            className=""
+                      
                         />
                     </Col>
                     <Col lg={6} md={6} sm={6}>
@@ -84,13 +79,8 @@ const Diagnosis = () => {
                             placeholder="Enter Date"
                             name="date"
                             label="Date"
-                            className="st-label"
-                        //  onBlur={handleBlur}
-                        //  value={values.mobilenumber}
-                        //  onChange={handleChange}
-                        //  errors={errors}
-                        //  touched={touched}
-                        //  required
+                            className=""
+                       
                         />
 
 
@@ -101,13 +91,8 @@ const Diagnosis = () => {
                             placeholder="Enter Your Name"
                             name="name"
                             label="Name"
-                            className="st-label"
-                        //  onBlur={handleBlur}
-                        //  value={values.mobilenumber}
-                        //  onChange={handleChange}
-                        //  errors={errors}
-                        //  touched={touched}
-                        //  required
+                            className=""
+                        
                         />
                     </Col>
                     <Col lg={6} md={6} sm={6}>
@@ -116,13 +101,8 @@ const Diagnosis = () => {
                             placeholder="Enter Register Id"
                             name="patientid"
                             label="Patient Id"
-                            className="st-label"
-                        //  onBlur={handleBlur}
-                        //  value={values.mobilenumber}
-                        //  onChange={handleChange}
-                        //  errors={errors}
-                        //  touched={touched}
-                        //  required
+                            className=""
+                       
                         />
                     </Col>
 

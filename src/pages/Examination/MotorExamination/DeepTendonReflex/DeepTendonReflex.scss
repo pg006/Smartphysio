@@ -1,0 +1,15 @@
+.deep-div {
+    .accordion-button:not(.collapsed)::after {
+        display: none;
+    }
+
+    .accordion-item:first-of-type .accordion-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+}
