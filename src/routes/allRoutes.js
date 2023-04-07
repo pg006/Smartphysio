@@ -19,6 +19,8 @@ import Billing from "../pages/Billing/Billing";
 import BillEntry from "../pages/Billing/BillEntry/BillEntry";
 import Prognosis from "../pages/Prognosis/Prognosis";
 import PrognosisEntry from "../pages/Prognosis/PrognosisEntry/PrognosisEntry";
+import DataWiseSummery from "../pages/DataWiseSummery/DataWiseSummery";
+import SendMessage from "../pages/SendMessage/SendMessage";
 
 const AllRoutes = () => {
   return (
@@ -45,6 +47,10 @@ const AllRoutes = () => {
                 <Route path={`/schedule-appoint`} element={ <ScheduleAppoint/>} />
                 <Route path={`/notification`} element={ <Notification/>} />
                 <Route path={`/diagnosis`} element={ <Diagnosis/>} />
+                <Route path={`/summery`} element={ <DataWiseSummery/>} />
+                <Route path={`/send-message`} element={ <SendMessage/>} />
+
+
 
               </Route>
 
