@@ -1,8 +1,17 @@
 import React, { Fragment } from 'react'
-import { Accordion } from 'react-bootstrap'
+import { Accordion, Col, Row } from 'react-bootstrap'
 import './RangeMotion.scss'
+import CustomInput from '../../../../Common/CustomInput/CustomInput'
+import CustomSelect from '../../../../Common/CustomSelect/CustomSelect'
 
 const RangeMotion = () => {
+
+    const Data = [
+        { name: "Mandible Depression"},
+        { name: "Mandible Elevation"},
+        { name: "Mandible Protrusion"},
+        { name: "Mandible Retraction"}
+    ];
 
     return (
         <Fragment>
@@ -13,10 +22,40 @@ const RangeMotion = () => {
                 >
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>
-                           Cervical Spine
+                            Cervical Spine
                         </Accordion.Header>
                         <Accordion.Body>
-                            1111
+                            {
+                                Data.map((val) => {
+                                    return (
+                                        <div className='text-div d-flex'>
+                                            <h6 className='mt-3 mx-2'>{val.name}</h6>
+                                            <Row>
+                                                <Col lg={3}>
+                                                    <CustomInput
+                                                        type='text'
+                                                        placeholder='AROM'
+                                                    />
+                                                </Col>
+                                                <Col lg={3}>
+                                                    <CustomInput
+                                                        type='text'
+                                                        placeholder='AROM'
+                                                    />
+                                                </Col>
+                                                <Col lg={3}>
+                                                    <CustomSelect
+                                                    />
+                                                </Col>
+                                                <Col lg={3}>
+                                                    <CustomSelect
+                                                    />
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    )
+                                })
+                            }
                         </Accordion.Body>
                     </Accordion.Item>
 

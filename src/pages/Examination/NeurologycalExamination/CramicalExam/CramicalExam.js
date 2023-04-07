@@ -28,10 +28,10 @@ const CramicalExam = () => {
             {["radio"].map((type) => (
               <>
                 <div
-                  className="item-1 d-flex justify-content-end"
+                  className="d-flex "
                   key={`inline-${type}`}
                 >
-                  <Col lg={4} className="mt-3">
+                  <div className="mt-3">
                     <Form.Check
                       inline
                       name="group1"
@@ -39,17 +39,17 @@ const CramicalExam = () => {
                       id={`default-${type}`}
                       label="Normal"
                     />
-                  </Col>
-                  <Col lg={4} className="mt-3">
+                  </div>
+                  <div className="mt-3">
                     <Form.Check
                       inline
                       name="group1"
                       type={type}
                       id={`default-${type}`}
-                      className="px-4"
+                      className=""
                       label="Abmormal"
                     />
-                  </Col>
+                  </div>
                 </div>
               </>
             ))}

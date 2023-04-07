@@ -26,7 +26,7 @@ const Investigation = () => {
       sortable: true,
       cell: (row, index) => {
         return (
-          <div className="">
+          <div className="w-100">
             <CustomSelect />
           </div>
         );
@@ -53,7 +53,7 @@ const Investigation = () => {
       sortable: true,
       cell: (row, index) => {
         return (
-          <div className="">
+          <div className="w-100 mt-2">
             <CustomInput
               textArea
               placeholder='findings'

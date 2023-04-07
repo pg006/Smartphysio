@@ -34,7 +34,7 @@ const Diagnosis = () => {
             sortable: true,
             cell: (row, index) => {
                 return (
-                    <div className="w-100">
+                    <div className="w-100 mt-3">
                         <CustomSelect />
                     </div>
                 );
